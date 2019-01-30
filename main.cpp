@@ -1,7 +1,8 @@
 #include <iostream>
 //#include "DynamicArray.h"
 //#include "LinkedArray.h"
-#include "LinkedList.h"
+//#include "LinkedList.h"
+#include "BinaryTree.h"
 
 using namespace std;
 
@@ -53,7 +54,7 @@ int main() {
 
     return 0;
 }
-#endif
+
 
 struct Person {
     LinkedNode node;
@@ -88,5 +89,41 @@ int main() {
     Print_LinkedList(list, myPrint);
 
     Free_LinkedList(list);
+    return 0;
+}
+#endif
+
+
+int main() {
+
+    BinaryNode node1 = {'A', nullptr, nullptr};
+    BinaryNode node2 = {'B', nullptr, nullptr};
+    BinaryNode node3 = {'C', nullptr, nullptr};
+    BinaryNode node4 = {'D', nullptr, nullptr};
+    BinaryNode node5 = {'E', nullptr, nullptr};
+    BinaryNode node6 = {'F', nullptr, nullptr};
+    BinaryNode node7 = {'G', nullptr, nullptr};
+    BinaryNode node8 = {'H', nullptr, nullptr};
+
+
+    node1.lchild = &node2;
+    node1.rchild = &node6;
+
+    node2.rchild = &node3;
+
+    node3.lchild = &node4;
+    node3.rchild = &node5;
+
+    node6.rchild = &node7;
+
+    node7.lchild = &node8;
+
+    //遍历
+//    Access(&node1);
+
+    int height = TreeHeight(&node1);
+    cout << "树的高度 = " << height << endl;
+
+
     return 0;
 }

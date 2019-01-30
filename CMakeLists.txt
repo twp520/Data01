@@ -3,4 +3,4 @@ project(Data01)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Data01 DynamicArray.h DynamicArray.cpp main.cpp LinkedArray.h LinkedArray.cpp LinkedList.h LinkedList.cpp)
+add_executable(Data01 DynamicArray.h DynamicArray.cpp main.cpp LinkedArray.h LinkedArray.cpp LinkedList.h LinkedList.cpp BinaryTree.h BinaryTree.cpp)

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/DATA/ClionProject/Data01/BinaryTree.cpp
+BinaryTree.h
+/Volumes/DATA/ClionProject/Data01/BinaryTree.h
+
+/Volumes/DATA/ClionProject/Data01/BinaryTree.h
+iostream
+-
+
+/Volumes/DATA/ClionProject/Data01/main.cpp
+iostream
+-
+BinaryTree.h
+/Volumes/DATA/ClionProject/Data01/BinaryTree.h
+
